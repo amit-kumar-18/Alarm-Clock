@@ -106,6 +106,8 @@ function setAlarm(time) {
       nextAlarm.remove()
       upcomingAlarms.firstElementChild.classList.remove('active')
     }
+        document.write(currentTime, ' ', time, '<br>')
+
   }, 1000)
 
   // Stop Button
