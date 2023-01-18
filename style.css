@@ -25,6 +25,20 @@ h1 {
   margin: 2rem auto;
 }
 
+.background {
+  background-image: url('./images/daniel-leone-v7daTKlZzaw-unsplash.jpg');
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 /* main container */
 .container {
   width: 350px;
@@ -40,6 +54,7 @@ h1 {
   margin: 0 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   position: relative;
+  opacity: 0.9;
 }
 
 /* Dynamic time containers */
