@@ -33,6 +33,9 @@ resetTime.addEventListener('click', () => (inputTime.value = ''))
 
 // Utility Functions
 function setAlarmTime(time) {
+  const timeString = new Date()
+  let currentTime = timeString.toLocaleTimeString()
+  document.write(currentTime, ' ', time)
   let alarmTime = time
   alarmTime = alarmTime + ':00'
   alarmTime = alarmTime.split(':')
