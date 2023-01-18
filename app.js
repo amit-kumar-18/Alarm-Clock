@@ -99,7 +99,7 @@ function setAlarm(time) {
   const clearCheck = setInterval(() => {
     const timeString = new Date()
     let currentTime = timeString.toLocaleTimeString()
-    if (time) {
+    if (currentTime == time) {
       alarmSound.play()
       alarmActive = false
       stopAlarm.style.display = 'block'
