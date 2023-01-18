@@ -26,7 +26,7 @@ h1 {
 }
 
 .background {
-  background-image: url('./images/daniel-leone-v7daTKlZzaw-unsplash.jpg');
+  background-image: url('./images/background.jpg');
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -42,6 +42,7 @@ h1 {
 /* main container */
 .container {
   width: 350px;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

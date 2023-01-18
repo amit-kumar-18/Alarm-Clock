@@ -104,10 +104,8 @@ function setAlarm(time) {
       alarmActive = false
       stopAlarm.style.display = 'block'
       nextAlarm.remove()
-      document.write(currentTime, ' ', time, 'Successful <br>')
       upcomingAlarms.firstElementChild.classList.remove('active')
     }
-    document.write(currentTime, ' ', time, '<br>')
   }, 1000)
 
   // Stop Button
