@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-img.png"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JS -->
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Main Heading -->
+    <h1>Alarm Clock</h1>
+
+    <!-- Top Container -->
+    <main class="container">
+      <!-- Dynamic time div -->
+      <div class="time" id="time">
+        <!-- Dynamic Hour Div -->
+        <div class="time-container">
+          <span id="hours"></span>
+          <small>Hours</small>
+        </div>
+        <!-- Dynamic Minute Div -->
+        <div class="time-container">
+          <span id="minutes"></span>
+          <small>Minutes</small>
+        </div>
+        <!-- Dynamic Second Div -->
+        <div class="time-container">
+          <span id="seconds"></span>
+          <small>Seconds</small>
+        </div>
+        <!-- Dynamic AM/PM Div -->
+        <div class="time-container">
+          <span id="AMPM"></span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="add-alarm" class="set-alarm">
+          Add Alarm
+        </button>
+
+        <!-- Dynamic Button -->
+        <button type="button" id="stop" class="stop">Stop</button>
+      </div>
+
+      <!-- Dynamic Div to hold upcoming alarm -->
+      <div class="upcoming-alarms" id="upcoming-alarms">
+        <small>Upcoming Alarm</small>
+      </div>
+
+      <!-- Dynamic Menu -->
+      <div class="alarm-input" id="alarm-input">
+        <label for="input-time">Input Time</label>
+        <input type="time" id="input-time" />
+        <button type="button" class="close" id="close">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <div class="input-time-btns">
+          <button type="button" class="set-btn" id="set-time">Set</button>
+          <button type="button" class="set-btn" id="reset-time">Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
