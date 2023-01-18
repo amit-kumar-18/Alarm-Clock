@@ -98,20 +98,16 @@ function setAlarm(time) {
   // Function to check alarm time to current time
   const clearCheck = setInterval(() => {
     const timeString = new Date()
-    let currentTime = timeString.toLocaleTimeString()
-        currentTime.toLocaleLowerCase()
-
+    let currentTime = timeString.toLocaleTimeString().toLocaleLowerCase()
     if (currentTime == time) {
       alarmSound.play()
       alarmActive = false
       stopAlarm.style.display = 'block'
       nextAlarm.remove()
-        document.write(currentTime, ' ', time, 'Successful <br>')
-      
+      document.write(currentTime, ' ', time, 'Successful <br>')
       upcomingAlarms.firstElementChild.classList.remove('active')
     }
-        document.write(currentTime, ' ', time, '<br>')
-
+    document.write(currentTime, ' ', time, '<br>')
   }, 1000)
 
   // Stop Button
